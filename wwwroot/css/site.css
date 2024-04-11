@@ -1,0 +1,104 @@
+/* Stile per il menu di navigazione */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: left;
+    gap: 10px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li button {
+    padding: 10px 20px;
+    background-color: #6584be;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+nav ul li button:hover {
+    background-color: #6584be;
+}
+
+body {
+    background-color: #6584be;
+    /* Colore di sfondo per l'intera pagina */
+    color: white;
+    /* Colore del testo */
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.1);
+    /* Colore di sfondo leggermente trasparente per il container */
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+.product {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.product-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.product img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+button {
+    background-color: #6584be;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #6584be;
+}
+
+/* Stili per la tendina */
+.dropdown select {
+    padding: 10px 20px;
+    background-color: #6584be;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.dropdown select:hover {
+    background-color: #6584be;
+}
+
+.zoom-img {
+    transition: transform .3s ease-in-out;
+}
+
+.zoom-img:hover {
+    transform: scale(1.1);
+    /* Zoom del 10% */
+}
+

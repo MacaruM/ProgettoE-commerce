@@ -1,0 +1,72 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <h2 class="display-4">Benvenuto su Z&M Shoes</h2>
+            <p>Esprimi la tua personalità urbana con ogni passo. Benvenuto nel mondo delle scarpe streetwear, dove lo stile si fonde con la strada e la moda diventa una forma di espressione. Scopri la collezione che ridefinisce il concetto di cool. Ogni scarpa è una dichiarazione di stile, pronta a raccontare la tua storia nelle strade della città. Entra nel nostro universo streetwear e porta la tua moda al livello successivo.</p>
+        </div>
+    </div>
+    <!-- Testo sotto le immagini -->
+    <div class="row mt-4">
+        <div class="col-md-12 text-center">
+            <h3>Ora scegli il tuo brand</h3>
+        </div>
+    </div>
+</div>
+
+<div class="row mt-5">
+    <div class="col-md-4 product text-center" >
+        <a href="Home/Jordan" class="text-decoration-none">
+            <img src="Jordan.jpg" alt="Jordan"  class="img-fluid custom-img"/>
+            <div class="brand-name">Jordan</div>
+        </a>
+    </div>
+    <div class="col-md-4 product text-center" >
+        <a href="Home/Nike" class="text-decoration-none">
+            <img src="Nike.jpg" alt="Nike"  class="img-fluid custom-img"/>
+            <div class="brand-name">Nike</div>
+        </a>
+    </div>
+    <div class="col-md-4 product text-center" >
+        <a href="Home/NewBalance" class="text-decoration-none">
+            <img src="newbalance.jpg" alt="newbalance"  class="img-fluid custom-img"/>
+            <div class="brand-name">New Balance</div>
+        </a>
+    </div>
+</div>
+
+<style>
+    .custom-img {
+        width: 100%; 
+        height: 70%; 
+        object-fit: cover; 
+        transition: transform 0.3s;
+    }
+
+    .product:hover .custom-img {
+        transform: scale(1.1);
+    }
+
+    .product {
+        position: relative;
+        cursor: pointer;
+    }
+
+    .brand-name {
+        text-align: center;
+        margin-top: 10px;
+        color: white;
+        font-weight: bold;
+    }
+
+    .brand-name:hover {
+        text-decoration: underline;
+    }
+
+    body {
+        background-color: #6584be; /* Colore di sfondo per l'intera pagina */
+    }
+</style>

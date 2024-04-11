@@ -1,0 +1,139 @@
+@{
+    ViewData["Title"] = "Jordan 4";
+}
+
+<header>
+    <h1>Scarpe Jordan 4</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><button onclick="window.location.href='Jordan'">Jordan</button></li>
+        <li><button onclick="window.location.href='NewBalance'">New Balance</button></li>
+        <li><button onclick="window.location.href='Nike'">Nike</button></li>
+    </ul>
+</nav>
+
+<nav class="dropdown">
+    <select onchange="window.location.href=this.value;">
+        <option value="/Home/Jordan">Jordan</option>
+        <option value="/Home/Jordan1">Jordan 1</option>
+        <option value="/Home/Jordan3">Jordan 3</option>
+        <option value="/Home/Jordan4" selected>Jordan 4</option>
+    </select>
+</nav>
+
+<div class="container">
+    <div class="product w-100">
+        <h2>Jordan 4 White Oreo</h2>
+        <div class="product-content">
+            <img src="/jordan4/jordan4whiteoreo.jpeg" alt="Jordan 4 White Oreo">
+            <p class="w-100"><span style="color:rgb(3, 15, 76);">Le Jordan 4 White Oreo presentano una tomaia in bianco e dettagli in
+                    nero.
+                    Queste sneakers sono un mix di eleganza e sportività.</span></p>
+        </div>
+        <p><strong>Prezzo: 229.99</strong></p>
+        <form method="post" action="/Home/AddToCart">
+            <input type="hidden" name="Articolo" value="Jordan 4 White Oreo">
+            <input type="hidden" name="Prezzo" value="229.99">
+            <input type="hidden" name="Immagine" value="/jordan4/jordan4whiteoreo.jpeg">
+            <button type="submit">Aggiungi al Carrello</button>
+        </form>
+    </div>
+</div>
+
+
+<div class="container">
+    <div class="product w-100">
+        <h2>Jordan 4 Pure Money</h2>
+        <div class="product-content">
+            <img src="/jordan4/jordan4puremoney.jpg" alt="Jordan 4 Pure Money">
+            <p class="w-100"><span style="color:rgb(3, 15, 76);">Le Jordan 4 Pure Money presentano una tomaia in bianco puro e
+                    dettagli in argento.
+                    Queste sneakers sono ideali per un look pulito e sofisticato.</span></p>
+        </div>
+        <p><strong>Prezzo: 229.99</strong></p>
+        <form method="post" action="/Home/AddToCart">
+            <input type="hidden" name="Articolo" value="Jordan 4 Pure Money">
+            <input type="hidden" name="Prezzo" value="229.99">
+            <input type="hidden" name="Immagine" value="/jordan4/jordan4puremoney.jpg">
+            <button type="submit">Aggiungi al Carrello</button>
+        </form>
+    </div>
+</div>
+
+<div class="container">
+    <div class="product w-100">
+        <h2>Jordan 4 Red Cement</h2>
+        <div class="product-content">
+            <img src="/jordan4/jordan4redcement.jpeg" alt="Jordan 4 Red Cement">
+            <p class="w-100"><span style="color:rgb(3, 15, 76);">Le Jordan 4 Red Cement combinano una tomaia in rosso cemento e
+                    dettagli in nero.
+                    Queste sneakers offrono un look audace e distintivo.</span></p>
+        </div>
+        <p><strong>Prezzo: 229.99</strong></p>
+        <form method="post" action="/Home/AddToCart">
+            <input type="hidden" name="Articolo" value="Jordan 4 Red Cement">
+            <input type="hidden" name="Prezzo" value="229.99">
+            <input type="hidden" name="Immagine" value="/jordan4/jordan4redcement.jpeg">
+            <button type="submit">Aggiungi al Carrello</button>
+        </form>
+    </div>
+</div>
+
+<div class="container">
+    <div class="product w-100">
+        <h2>Jordan 4 Thunder</h2>
+        <div class="product-content">
+            <img src="/jordan4/jordan4thunder.webp" alt="Jordan 4 Thunder">
+            <p class="w-100"><span style="color:rgb(3, 15, 76);">Le Jordan 4 Thunder presentano una tomaia in giallo tuono e dettagli
+                    in nero.
+                    Queste sneakers sono un mix di colore e stile.</span></p>
+        </div>
+        <p><strong>Prezzo: 229.99</strong></p>
+        <form method="post" action="/Home/AddToCart">
+            <input type="hidden" name="Articolo" value="Jordan 4 Thunder">
+            <input type="hidden" name="Prezzo" value="229.99">
+            <input type="hidden" name="Immagine" value="/jordan4/jordan4thunder.webp">
+            <button type="submit">Aggiungi al Carrello</button>
+        </form>
+    </div>
+</div>
+
+<div class="container">
+    <div class="product w-100">
+        <h2>Jordan 4 University Blue (UB)</h2>
+        <div class="product-content">
+            <img src="/jordan4/jordan4ub.webp" alt="Jordan 4 University Blue">
+            <p class="w-100"><span style="color:rgb(3, 15, 76);">Le Jordan 4 University Blue (UB) presentano una tomaia in blu
+                    universitario e dettagli in bianco.
+                    Queste sneakers sono ideali per un look fresco e vivace.</span></p>
+        </div>
+        <p><strong>Prezzo: 229.99</strong></p>
+        <form method="post" action="/Home/AddToCart">
+            <input type="hidden" name="Articolo" value="Jordan 4 University Blue (UB)">
+            <input type="hidden" name="Prezzo" value="229.99">
+            <input type="hidden" name="Immagine" value="/jordan4/jordan4ub.webp">
+            <button type="submit">Aggiungi al Carrello</button>
+        </form>
+    </div>
+</div>
+
+<div class="container">
+    <div class="product w-100">
+        <h2>Jordan 4 Metallic Purple</h2>
+        <div class="product-content">
+            <img src="/jordan4/Jordan4metallicpurple.jpg" alt="Jordan 4 Metallic Purple">
+            <p class="w-100"><span style="color:rgb(3, 15, 76);">Le Jordan 4 Metallic Purple sono caratterizzate da una tomaia in
+                    viola metallizzato e dettagli in bianco.
+                    Queste sneakers sono un mix di eleganza e audacia.</span></p>
+        </div>
+        <p><strong>Prezzo: 229.99</strong></p>
+        <form method="post" action="/Home/AddToCart">
+            <input type="hidden" name="Articolo" value="Jordan 4 Metallic Purple">
+            <input type="hidden" name="Prezzo" value="229.99">
+            <input type="hidden" name="Immagine" value="/jordan4/Jordan4metallicpurple.jpg">
+            <button type="submit">Aggiungi al Carrello</button>
+        </form>
+    </div>
+</div>

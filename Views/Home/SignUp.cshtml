@@ -1,0 +1,58 @@
+﻿@model Registrazione;
+@{
+    ViewData["Title"] = "Registrati";
+}
+
+<div class="text-center" style="min-width: 500px;">
+    <h1 class="display-4">Registrati</h1>
+    <form class="m-2" method="post" asp-action="SignUp" asp-controller="Home">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+        <div class="form-group">
+            <label asp-for=Nome>Inserisci il tuo Nome</label>
+            <input asp-for=Nome type="text" class="form-control w-50 mx-auto">
+        </div>
+        <div class="form-group">
+            <label asp-for=Cognome>Inserisci il tuo Cognome</label>
+            <input asp-for=Cognome type="text" class="form-control w-50 mx-auto">
+        </div>
+        <div class="form-group">
+            <label asp-for=NomeUtente>Inserisci il tuo Nome Utente</label>
+            <input asp-for=NomeUtente type="text" class="form-control w-50 mx-auto">
+        </div>
+        <div class="form-group">
+            <label asp-for=Email>Inserisci la tua Email</label>
+            <input asp-for=Email type="text" class="form-control w-50 mx-auto">
+        </div>
+        <div class="form-group">
+            <label asp-for=Sesso>Inserisci il tuo Sesso</label>
+            <input asp-for=Sesso class="form-check-input" type="radio" value="Maschio">
+            <label asp-for=Sesso>Maschio</label>
+            <input asp-for=Sesso class="form-check-input" type="radio" value="Femmina">
+            <label asp-for=Sesso>Femmina</label>
+            <input asp-for=Sesso class="form-check-input" type="radio" value="Non mi esprimo">
+            <label asp-for=Sesso>Non mi esprimo</label>
+        </div>
+        <div class="form-group">
+            <label asp-for=DataNascita>Inserisci la tua Data di Nascita</label>
+            <input asp-for=DataNascita type="date" class="form-control w-50 mx-auto">
+        </div>
+        <div class="form-group">
+            <label asp-for=Password>Inserisci la tua Password</label>
+            <input asp-for="Password" type="password" class="form-control w-50 mx-auto" id="passwordInput">
+        </div>
+
+        <button type="submit" class="btn btn-primary">Registrati</button>
+        <div class="row">
+            <div class="col-md-12">
+                <p>Hai già un account? <a href="/Home/SignIn">Accedi qui</a>.</p>
+            </div>
+        </div>
+    </form>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

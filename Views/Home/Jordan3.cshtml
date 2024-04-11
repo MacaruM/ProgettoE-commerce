@@ -1,0 +1,139 @@
+@{
+    ViewData["Title"] = "Jordan 3";
+}
+
+<header>
+    <h1>Scarpe Jordan 3</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><button onclick="window.location.href='Jordan'">Jordan</button></li>
+        <li><button onclick="window.location.href='NewBalance'">New Balance</button></li>
+        <li><button onclick="window.location.href='Nike'">Nike</button></li>
+    </ul>
+</nav>
+
+<nav class="dropdown">
+    <select onchange="window.location.href=this.value;">
+        <option value="/Home/Jordan">Jordan</option>
+        <option value="/Home/Jordan1">Jordan 1</option>
+        <option value="/Home/Jordan3" selected>Jordan 3</option>
+        <option value="/Home/Jordan4">Jordan 4</option>
+    </select>
+</nav>
+
+<div class="container">
+    <div class="product">
+        <h2>Jordan 3 Cardinal Red</h2>
+        <div class="product-content">
+            <img src="/jordan3/jordan3cardinalred.webp" alt="Jordan 3 Cardinal Red">
+            <p><span style="color:rgb(3, 15, 76);">Le Jordan 3 Cardinal Red presentano una tomaia in rosso cardinale
+                    e dettagli in bianco.
+                    Queste sneakers sono un mix di audacia e classe.</span></p>
+        </div>
+        <p><strong>Prezzo: 159.99</strong></p>
+        <form method="post" action="/Home/AddToCart">
+            <input type="hidden" name="Articolo" value="Jordan 3 Cardinal Red">
+            <input type="hidden" name="Prezzo" value="159.99">
+            <input type="hidden" name="Immagine" value="/jordan3/jordan3cardinalred.webp">
+            <button type="submit">Aggiungi al Carrello</button>
+        </form>
+    </div>
+</div>
+
+<div class="container">
+    <div class="product">
+        <h2>Jordan 3 Craft Ivory</h2>
+        <div class="product-content">
+            <img src="/jordan3/jordan3craftivory.jpg" alt="Jordan 3 Craft Ivory">
+            <p><span style="color:rgb(3, 15, 76);">Le Jordan 3 Craft Ivory sono caratterizzate da una tomaia in
+                    avorio e dettagli in beige.
+                    Queste sneakers offrono un look sofisticato e elegante.</span></p>
+        </div>
+        <p><strong>Prezzo: 199.99</strong></p>
+        <form method="post" action="/Home/AddToCart">
+            <input type="hidden" name="Articolo" value="Jordan 3 Craft Ivory">
+            <input type="hidden" name="Prezzo" value="199.99">
+            <input type="hidden" name="Immagine" value="/jordan3/jordan3craftivory.jpg">
+            <button type="submit">Aggiungi al Carrello</button>
+        </form>
+    </div>
+</div>
+
+<div class="container">
+    <div class="product">
+        <h2>Jordan 3 J. Balvin</h2>
+        <div class="product-content">
+            <img src="/jordan3/jordan3j.balvin.jpg" alt="Jordan 3 J. Balvin">
+            <p><span style="color:rgb(3, 15, 76);">Le Jordan 3 J. Balvin sono un'edizione speciale con una tomaia
+                    multicolore e dettagli in nero.
+                    Queste sneakers sono un omaggio all'arte e alla creatività.</span></p>
+        </div>
+        <p><strong>Prezzo: 399.99</strong></p>
+        <form method="post" action="/Home/AddToCart">
+            <input type="hidden" name="Articolo" value="Jordan 3 J. Balvin">
+            <input type="hidden" name="Prezzo" value="399.99">
+            <input type="hidden" name="Immagine" value="/jordan3/jordan3j.balvin.jpg">
+            <button type="submit">Aggiungi al Carrello</button>
+        </form>
+    </div>
+</div>
+
+<div class="container">
+    <div class="product">
+        <h2>Jordan 3 Dark Iris</h2>
+        <div class="product-content">
+            <img src="/jordan3/jordan3darkiris.webp" alt="Jordan 3 Dark Iris">
+            <p><span style="color:rgb(3, 15, 76);">Le Jordan 3 Dark Iris presentano una tomaia in viola scuro e
+                    dettagli in bianco.
+                    Queste sneakers sono ideali per un look audace e distintivo.</span></p>
+        </div>
+        <p><strong>Prezzo: 229.99</strong></p>
+        <form method="post" action="/Home/AddToCart">
+            <input type="hidden" name="Articolo" value="Jordan 3 Dark Iris">
+            <input type="hidden" name="Prezzo" value="229.99">
+            <input type="hidden" name="Immagine" value="/jordan3/jordan3darkiris.webp">
+            <button type="submit">Aggiungi al Carrello</button>
+        </form>
+    </div>
+</div>
+
+<div class="container">
+    <div class="product">
+        <h2>Jordan 3 Midnight Navy</h2>
+        <div class="product-content">
+            <img src="/jordan3/jordan3midnightnavy.webp" alt="Jordan 3 Midnight Navy">
+            <p><span style="color:rgb(3, 15, 76);">Le Jordan 3 Midnight Navy presentano una tomaia in pelle blu
+                    scuro e dettagli in bianco.
+                    Queste sneakers combinano eleganza e sportività, rendendole ideali per ogni occasione.</span>
+            </p>
+        </div>
+        <p><strong>Prezzo: 229.99</strong></p>
+        <form method="post" action="/Home/AddToCart">
+            <input type="hidden" name="Articolo" value="Jordan 3 Midnight Navy">
+            <input type="hidden" name="Prezzo" value="229.99">
+            <input type="hidden" name="Immagine" value="/jordan3/jordan3midnightnavy.webp">
+            <button type="submit">Aggiungi al Carrello</button>
+        </form>
+    </div>
+</div>
+
+<div class="container">
+    <div class="product">
+        <h2>Jordan 3 Black Cat</h2>
+        <div class="product-content">
+            <img src="/jordan3/jordan3blackcat.png" alt="Jordan 3 Black Cat">
+            <p><span style="color:rgb(3, 15, 76);">Le Jordan 3 Black Cat sono caratterizzate da una tomaia in nero
+                    opaco e dettagli minimali.
+                    Queste sneakers sono ideali per un look sobrio e raffinato.</span></p>
+        </div>
+        <p><strong>Prezzo: 219.99</strong></p>
+        <form method="post" action="/Home/AddToCart">
+            <input type="hidden" name="Articolo" value="Jordan 3 Black Cat">
+            <input type="hidden" name="Prezzo" value="219.99">
+            <input type="hidden" name="Immagine" value="/jordan3/jordan3blackcat.png">
+            <button type="submit">Aggiungi al Carrello</button>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,516 @@
+@{
+    ViewData["Title"] = "Tutte le nostre scarpe";
+}
+
+<style>
+    .product {
+        text-align: center;
+    }
+
+    .product img {
+        width: 300px;
+        /* Larghezza desiderata */
+        height: 200px;
+        /* Altezza desiderata */
+        object-fit: cover;
+        /* Per mantenere le proporzioni dell'immagine */
+        border-radius: 5px;
+    }
+</style>
+
+<header>
+    <h1>Tutte le scarpe</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><button onclick="window.location.href='Jordan'">Jordan</button></li>
+        <li><button onclick="window.location.href='NewBalance'">New Balance</button></li>
+        <li><button onclick="window.location.href='Nike'">Nike</button></li>
+    </ul>
+</nav>
+
+<div class="container">
+    <!-- Jordan 1 Varsity Red -->
+    <div class="product">
+        <h2>Jordan 1 Varsity Red</h2>
+        <img src="/jordan1/jordan1varsityred.jpeg" alt="Scarpe Jordan 1" class="zoom-img">
+        <p><strong>Prezzo: $199.99</strong></p>
+        <form method="post" action="/Home/AddToCart">
+            <input type="hidden" name="Articolo" value="Jordan 1 Varsity Red">
+            <input type="hidden" name="Prezzo" value="199.99">
+            <input type="hidden" name="Immagine" value="/jordan1/jordan1varsityred.jpeg">
+            <button type="submit">Aggiungi al Carrello</button>
+        </form>
+    </div>
+
+    <!-- Jordan 1 Bred Patent -->
+    <div class="product">
+        <h2>Jordan 1 Bred Patent</h2>
+        <img src="/jordan1/jordan1 Bred Patent.webp" alt="Scarpe Jordan 1" class="zoom-img">
+        <p><strong>Prezzo: $219.99</strong></p>
+        <form method="post" action="/Home/AddToCart">
+            <input type="hidden" name="Articolo" value="Jordan 1 Bred Patent">
+            <input type="hidden" name="Prezzo" value="219.99">
+            <input type="hidden" name="Immagine" value="/jordan1/jordan1 Bred Patent.webp">
+            <button type="submit">Aggiungi al Carrello</button>
+        </form>
+    </div>
+
+    <!-- Jordan 1 Chicago L.A.F -->
+    <div class="product">
+        <h2>Jordan 1 Chicago L.A.F</h2>
+        <img src="/jordan1/Jordan1ChicagoLostAndFound1.jpeg" alt="Scarpe Jordan 1" class="zoom-img">
+        <p><strong>Prezzo: $229.99</strong></p>
+        <form method="post" action="/Home/AddToCart">
+            <input type="hidden" name="Articolo" value="Jordan1 Chicago L.A.F">
+            <input type="hidden" name="Prezzo" value="229.99">
+            <input type="hidden" name="Immagine" value="/jordan1/Jordan1ChicagoLostAndFound1.jpeg">
+            <button type="submit">Aggiungi al Carrello</button>
+        </form>
+    </div>
+
+    <!-- Jordan 1 Court Purple -->
+    <div class="product">
+        <h2>Jordan 1 Court Purple</h2>
+        <img src="/jordan1/jordan1courtpourple.jpeg" alt="Scarpe Jordan 1" class="zoom-img">
+        <p><strong>Prezzo: $209.99</strong></p>
+        <form method="post" action="/Home/AddToCart">
+            <input type="hidden" name="Articolo" value="Jordan 1 Court Purple">
+            <input type="hidden" name="Prezzo" value="209.99">
+            <input type="hidden" name="Immagine" value="/jordan1/jordan1courtpourple.jpeg">
+            <button type="submit">Aggiungi al Carrello</button>
+        </form>
+    </div>
+
+    <!-- Jordan 1 Obsidian -->
+    <div class="product">
+        <h2>Jordan 1 Obsidian</h2>
+        <img src="/jordan1/jordan1obsidian.webp" alt="Scarpe Jordan 1" class="zoom-img">
+        <p><strong>Prezzo: $219.99</strong></p>
+        <form method="post" action="/Home/AddToCart">
+            <input type="hidden" name="Articolo" value="Jordan 1 Obsidian">
+            <input type="hidden" name="Prezzo" value="219.99">
+            <input type="hidden" name="Immagine" value="/jordan1/jordan1obsidian.webp">
+            <button type="submit">Aggiungi al Carrello</button>
+        </form>
+    </div>
+
+    <!-- Jordan 1 University Blue -->
+    <div class="product">
+        <h2>Jordan 1 University Blue</h2>
+        <img src="/jordan1/jordan1UB.webp" alt="Scarpe Jordan 1" class="zoom-img">
+        <p><strong>Prezzo: $199.99</strong></p>
+        <form method="post" action="/Home/AddToCart">
+            <input type="hidden" name="Articolo" value="Jordan 1 University Blue">
+            <input type="hidden" name="Prezzo" value="199.99">
+            <input type="hidden" name="Immagine" value="/jordan1/jordan1UB.webp">
+            <button type="submit">Aggiungi al Carrello</button>
+        </form>
+    </div>
+
+
+
+
+
+    <!-- Jordan 3 Black Cat -->
+    <div class="product">
+        <h2>Jordan 3 Black Cat</h2>
+        <img src="/jordan3/jordan3blackcat.png" alt="Scarpe Jordan 3" class="zoom-img">
+        <p><strong>Prezzo: $219.99</strong></p>
+        <form method="post" action="/Home/AddToCart">
+            <input type="hidden" name="Articolo" value="Jordan 3 Black Cat">
+            <input type="hidden" name="Prezzo" value="219.99">
+            <input type="hidden" name="Immagine" value="/jordan3/jordan3blackcat.png">
+            <button type="submit">Aggiungi al Carrello</button>
+        </form>
+    </div>
+
+    <!-- Jordan 3 Cardinal Red -->
+    <div class="product">
+        <h2>Jordan 3 Cardinal Red</h2>
+        <img src="/jordan3/jordan3cardinalred.webp" alt="Scarpe Jordan 3" class="zoom-img">
+        <p><strong>Prezzo: $159.99</strong></p>
+        <form method="post" action="/Home/AddToCart">
+            <input type="hidden" name="Articolo" value="Jordan 3 Cardinal Red">
+            <input type="hidden" name="Prezzo" value="159.99">
+            <input type="hidden" name="Immagine" value="/jordan3/jordan3cardinalred.webp">
+            <button type="submit">Aggiungi al Carrello</button>
+        </form>
+    </div>
+
+    <!-- Jordan 3 Craft Ivory -->
+    <div class="product">
+        <h2>Jordan 3 Craft Ivory</h2>
+        <img src="/jordan3/jordan3craftivory.jpg" alt="Scarpe Jordan 3" class="zoom-img">
+        <p><strong>Prezzo: $199.99</strong></p>
+        <form method="post" action="/Home/AddToCart">
+            <input type="hidden" name="Articolo" value="Jordan 3 Craft Ivory">
+            <input type="hidden" name="Prezzo" value="199.99">
+            <input type="hidden" name="Immagine" value="/jordan3/jordan3craftivory.jpg">
+            <button type="submit">Aggiungi al Carrello</button>
+        </form>
+    </div>
+
+    <!-- Jordan 3 J. Balvin -->
+    <div class="product">
+        <h2>Jordan 3 J. Balvin</h2>
+        <img src="/jordan3/jordan3j.balvin.jpg" alt="Scarpe Jordan 3" class="zoom-img">
+        <p><strong>Prezzo: $399.99</strong></p>
+        <form method="post" action="/Home/AddToCart">
+            <input type="hidden" name="Articolo" value="Jordan 3 J. Balvin">
+            <input type="hidden" name="Prezzo" value="399.99">
+            <input type="hidden" name="Immagine" value="/jordan3/jordan3j.balvin.jpg">
+            <button type="submit">Aggiungi al Carrello</button>
+        </form>
+    </div>
+
+    <!-- Jordan 3 Dark Iris -->
+    <div class="product">
+        <h2>Jordan 3 Dark Iris</h2>
+        <img src="/jordan3/jordan3darkiris.webp" alt="Scarpe Jordan 3" class="zoom-img">
+        <p><strong>Prezzo: $229.99</strong></p>
+        <form method="post" action="/Home/AddToCart">
+            <input type="hidden" name="Articolo" value="Jordan 3 Dark Iris">
+            <input type="hidden" name="Prezzo" value="229.99">
+            <input type="hidden" name="Immagine" value="/jordan3/jordan3darkiris.webp">
+            <button type="submit">Aggiungi al Carrello</button>
+        </form>
+    </div>
+
+    <!-- Jordan 3 Midnight Navy -->
+    <div class="product">
+        <h2>Jordan 3 Midnight Navy</h2>
+        <img src="/jordan3/jordan3midnightnavy.webp" alt="Scarpe Jordan 3" class="zoom-img">
+        <p><strong>Prezzo: $229.99</strong></p>
+        <form method="post" action="/Home/AddToCart">
+            <input type="hidden" name="Articolo" value="Jordan 3 Midnight Navy">
+            <input type="hidden" name="Prezzo" value="229.99">
+            <input type="hidden" name="Immagine" value="/jordan3/jordan3midnightnavy.webp">
+            <button type="submit">Aggiungi al Carrello</button>
+        </form>
+    </div>
+
+
+
+
+
+    <!-- Jordan 4 Metallic Purple -->
+    <div class="product">
+        <h2>Jordan 4 Metallic Purple</h2>
+        <img src="/jordan4/Jordan4metallicpurple.jpg" alt="Scarpe Jordan 4" class="zoom-img">
+        <p><strong>Prezzo: $229.99</strong></p>
+        <form method="post" action="/Home/AddToCart">
+            <input type="hidden" name="Articolo" value="Jordan 4 Metallic Purple">
+            <input type="hidden" name="Prezzo" value="229.99">
+            <input type="hidden" name="Immagine" value="/jordan4/Jordan4metallicpurple.jpg">
+            <button type="submit">Aggiungi al Carrello</button>
+        </form>
+    </div>
+
+    <!-- Jordan 4 Pure Money -->
+    <div class="product">
+        <h2>Jordan 4 Pure Money</h2>
+        <img src="/jordan4/jordan4puremoney.jpg" alt="Scarpe Jordan 4" class="zoom-img">
+        <p><strong>Prezzo: $229.99</strong></p>
+        <form method="post" action="/Home/AddToCart">
+            <input type="hidden" name="Articolo" value="Jordan 4 Pure Money">
+            <input type="hidden" name="Prezzo" value="229.99">
+            <input type="hidden" name="Immagine" value="/jordan4/jordan4puremoney.jpg">
+            <button type="submit">Aggiungi al Carrello</button>
+        </form>
+    </div>
+
+    <!-- Jordan 4 Red Cement -->
+    <div class="product">
+        <h2>Jordan 4 Red Cement</h2>
+        <img src="/jordan4/jordan4redcement.jpeg" alt="Scarpe Jordan 4" class="zoom-img">
+        <p><strong>Prezzo: $229.99</strong></p>
+        <form method="post" action="/Home/AddToCart">
+            <input type="hidden" name="Articolo" value="Jordan 4 Red Cement">
+            <input type="hidden" name="Prezzo" value="229.99">
+            <input type="hidden" name="Immagine" value="/jordan4/jordan4redcement.jpeg">
+            <button type="submit">Aggiungi al Carrello</button>
+        </form>
+    </div>
+
+    <!-- Jordan 4 Yellow Thunder -->
+    <div class="product">
+        <h2>Jordan 4 Yellow Thunder</h2>
+        <img src="/jordan4/jordan4thunder.webp" alt="Scarpe Jordan 4" class="zoom-img">
+        <p><strong>Prezzo: $229.99</strong></p>
+        <form method="post" action="/Home/AddToCart">
+            <input type="hidden" name="Articolo" value="Jordan 4 Yellow Thunder">
+            <input type="hidden" name="Prezzo" value="229.99">
+            <input type="hidden" name="Immagine" value="/jordan4/jordan4thunder.webp">
+            <button type="submit">Aggiungi al Carrello</button>
+        </form>
+    </div>
+
+    <!-- Jordan 4 University Blue (UB) -->
+    <div class="product">
+        <h2>Jordan 4 University Blue (UB)</h2>
+        <img src="/jordan4/jordan4ub.webp" alt="Scarpe Jordan 4" class="zoom-img">
+        <p><strong>Prezzo: $229.99</strong></p>
+        <form method="post" action="/Home/AddToCart">
+            <input type="hidden" name="Articolo" value="Jordan 4 University Blue (UB)">
+            <input type="hidden" name="Prezzo" value="229.99">
+            <input type="hidden" name="Immagine" value="/jordan4/jordan4ub.webp">
+            <button type="submit">Aggiungi al Carrello</button>
+        </form>
+    </div>
+
+    <!-- Jordan 4 White Oreo -->
+    <div class="product">
+        <h2>Jordan 4 White Oreo</h2>
+        <img src="/jordan4/jordan4whiteoreo.jpeg" alt="Scarpe Jordan 4" class="zoom-img">
+        <p><strong>Prezzo: $229.99</strong></p>
+        <form method="post" action="/Home/AddToCart">
+            <input type="hidden" name="Articolo" value="Jordan 4 White Oreo">
+            <input type="hidden" name="Prezzo" value="229.99">
+            <input type="hidden" name="Immagine" value="/jordan4/jordan4whiteoreo.jpeg">
+            <button type="submit">Aggiungi al Carrello</button>
+        </form>
+    </div>
+
+
+
+
+
+    <!-- Air Force 1 Bianche -->
+    <div class="product">
+        <h2>Air Force 1 Bianche</h2>
+        <img src="/nike/airforce1b.png" alt="Air Force 1 Bianche" class="zoom-img">
+        <p><strong>Prezzo: $120.00</strong></p>
+        <form method="post" action="/Home/AddToCart">
+            <input type="hidden" name="Articolo" value="Air Force 1 Bianche">
+            <input type="hidden" name="Prezzo" value="120.00">
+            <input type="hidden" name="Immagine" value="/nike/airforce1b.png">
+            <button type="submit">Aggiungi al Carrello</button>
+        </form>
+    </div>
+
+    <!-- Air Force 1 Nere -->
+    <div class="product">
+        <h2>Air Force 1 Nere</h2>
+        <img src="/nike/airforce1n.webp" alt="Air Force 1 Nere" class="zoom-img">
+        <p><strong>Prezzo: $120.00</strong></p>
+        <form method="post" action="/Home/AddToCart">
+            <input type="hidden" name="Articolo" value="Air Force 1 Nere">
+            <input type="hidden" name="Prezzo" value="120.00">
+            <input type="hidden" name="Immagine" value="/nike/airforce1n.webp">
+            <button type="submit">Aggiungi al Carrello</button>
+        </form>
+    </div>
+
+    <!-- Nike DunkHigh M.N. Navy -->
+    <div class="product">
+        <h2>Nike DunkHigh M.N. Navy</h2>
+        <img src="/nike/dunkhighblu.png" alt="Nike Dunk High Midnight Navy" class="zoom-img">
+        <p><strong>Prezzo: $110.00</strong></p>
+        <form method="post" action="/Home/AddToCart">
+            <input type="hidden" name="Articolo" value="Nike DunkHigh M.N. Navy">
+            <input type="hidden" name="Prezzo" value="110.00">
+            <input type="hidden" name="Immagine" value="/nike/dunkhighblu.png">
+            <button type="submit">Aggiungi al Carrello</button>
+        </form>
+    </div>
+
+    <!-- Nike Dunk High Panda -->
+    <div class="product">
+        <h2>Nike Dunk High Panda</h2>
+        <img src="/nike/dunkhighnere.png" alt="Nike Dunk High Panda" class="zoom-img">
+        <p><strong>Prezzo: $120.00</strong></p>
+        <form method="post" action="/Home/AddToCart">
+            <input type="hidden" name="Articolo" value="Nike Dunk High Panda">
+            <input type="hidden" name="Prezzo" value="120.00">
+            <input type="hidden" name="Immagine" value="/nike/dunkhighnere.png">
+            <button type="submit">Aggiungi al Carrello</button>
+        </form>
+    </div>
+
+    <!-- Nike Dunk High University Red -->
+    <div class="product">
+        <h2>Nike Dunk High University Red</h2>
+        <img src="/nike/dunkhighrosse.webp" alt="Nike Dunk High University Red" class="zoom-img">
+        <p><strong>Prezzo: $120.00</strong></p>
+        <form method="post" action="/Home/AddToCart">
+            <input type="hidden" name="Articolo" value="Nike Dunk High University Red">
+            <input type="hidden" name="Prezzo" value="120.00">
+            <input type="hidden" name="Immagine" value="/nike/dunkhighrosse.webp">
+            <button type="submit">Aggiungi al Carrello</button>
+        </form>
+    </div>
+
+    <!-- Nike Dunk High Australia Verdi -->
+    <div class="product">
+        <h2>Nike Dunk High Australia Verdi</h2>
+        <img src="/nike/dunkhighverdi.webp" alt="Nike Dunk High Australia Verdi" class="zoom-img">
+        <p><strong>Prezzo: $120.00</strong></p>
+        <form method="post" action="/Home/AddToCart">
+            <input type="hidden" name="Articolo" value="Nike Dunk High Australia Verdi">
+            <input type="hidden" name="Prezzo" value="120.00">
+            <input type="hidden" name="Immagine" value="/nike/dunkhighverdi.webp">
+            <button type="submit">Aggiungi al Carrello</button>
+        </form>
+    </div>
+
+    <!-- Nike Dunk High Lakers -->
+    <div class="product">
+        <h2>Nike Dunk High Lakers</h2>
+        <img src="/nike/dunkhighyp.jpeg" alt="Nike Dunk High Lakers" class="zoom-img">
+        <p><strong>Prezzo: $120.00</strong></p>
+        <form method="post" action="/Home/AddToCart">
+            <input type="hidden" name="Articolo" value="Nike Dunk High Lakers">
+            <input type="hidden" name="Prezzo" value="120.00">
+            <input type="hidden" name="Immagine" value="/nike/dunkhighyp.jpeg">
+            <button type="submit">Aggiungi al Carrello</button>
+        </form>
+    </div>
+
+    <!-- Nike Dunk Low Polar Blue -->
+    <div class="product">
+        <h2>Nike Dunk Low Polar Blue</h2>
+        <img src="/nike/dunklowblu.jpeg" alt="Nike Dunk Low Polar Blue" class="zoom-img">
+        <p><strong>Prezzo: $110.00</strong></p>
+        <form method="post" action="/Home/AddToCart">
+            <input type="hidden" name="Articolo" value="Nike Dunk Low Polar Blue">
+            <input type="hidden" name="Prezzo" value="110.00">
+            <input type="hidden" name="Immagine" value="/nike/dunklowblu.jpeg">
+            <button type="submit">Aggiungi al Carrello</button>
+        </form>
+    </div>
+
+    <!-- Nike Dunk Low Cacao Wow -->
+    <div class="product">
+        <h2>Nike Dunk Low Cacao Wow</h2>
+        <img src="/nike/dunklowmarroni.webp" alt="Nike Dunk Low Cacao Wow" class="zoom-img">
+        <p><strong>Prezzo: $110.00</strong></p>
+        <form method="post" action="/Home/AddToCart">
+            <input type="hidden" name="Articolo" value="Nike Dunk Low Cacao Wow">
+            <input type="hidden" name="Prezzo" value="110.00">
+            <input type="hidden" name="Immagine" value="/nike/dunklowmarroni.webp">
+            <button type="submit">Aggiungi al Carrello</button>
+        </form>
+    </div>
+
+    <!-- Nike Dunk Low Panda -->
+    <div class="product">
+        <h2>Nike Dunk Low Panda</h2>
+        <img src="/nike/dunklownere.jpg" alt="Nike Dunk Low Panda" class="zoom-img">
+        <p><strong>Prezzo: $110.00</strong></p>
+        <form method="post" action="/Home/AddToCart">
+            <input type="hidden" name="Articolo" value="Nike Dunk Low Panda">
+            <input type="hidden" name="Prezzo" value="110.00">
+            <input type="hidden" name="Immagine" value="/nike/dunklownere.jpg">
+            <button type="submit">Aggiungi al Carrello</button>
+        </form>
+    </div>
+
+    <!-- Nike Dunk Low Michigan State -->
+    <div class="product">
+        <h2>Nike Dunk Low Michigan State</h2>
+        <img src="/nike/dunklowverdi.jpeg" alt="Nike Dunk Low Michigan State" class="zoom-img">
+        <p><strong>Prezzo: $110.00</strong></p>
+        <form method="post" action="/Home/AddToCart">
+            <input type="hidden" name="Articolo" value="Nike Dunk Low Michigan State">
+            <input type="hidden" name="Prezzo" value="110.00">
+            <input type="hidden" name="Immagine" value="/nike/dunklowverdi.jpeg">
+            <button type="submit">Aggiungi al Carrello</button>
+        </form>
+    </div>
+
+
+
+
+    <!-- New Balance 550 Blu -->
+    <div class="product">
+        <h2>New Balance 550 Blu</h2>
+        <img src="/newbalance/newbalanca550blu.jpg" alt="New Balance 550 Blu" class="zoom-img">
+        <p><strong>Prezzo: $120.00</strong></p>
+        <form method="post" action="/Home/AddToCart">
+            <input type="hidden" name="Articolo" value="New Balance 550 Blu">
+            <input type="hidden" name="Prezzo" value="120.00">
+            <input type="hidden" name="Immagine" value="/newbalance/newbalanca550blu.jpg">
+            <button type="submit">Aggiungi al Carrello</button>
+        </form>
+    </div>
+
+    <!-- New Balance 480 -->
+    <div class="product">
+        <h2>New Balance 480</h2>
+        <img src="/newbalance/newbalance480.webp" alt="New Balance 480" class="zoom-img">
+        <p><strong>Prezzo: $110.00</strong></p>
+        <form method="post" action="/Home/AddToCart">
+            <input type="hidden" name="Articolo" value="New Balance 480">
+            <input type="hidden" name="Prezzo" value="110.00">
+            <input type="hidden" name="Immagine" value="/newbalance/newbalance480.webp">
+            <button type="submit">Aggiungi al Carrello</button>
+        </form>
+    </div>
+
+    <!-- New Balance 650 Blu -->
+    <div class="product">
+        <h2>New Balance 650 Blu</h2>
+        <img src="/newbalance/newbalance650blu.webp" alt="New Balance 650 Blu" class="zoom-img">
+        <p><strong>Prezzo: $130.00</strong></p>
+        <form method="post" action="/Home/AddToCart">
+            <input type="hidden" name="Articolo" value="New Balance 650 Blu">
+            <input type="hidden" name="Prezzo" value="130.00">
+            <input type="hidden" name="Immagine" value="/newbalance/newbalance650blu.webp">
+            <button type="submit">Aggiungi al Carrello</button>
+        </form>
+    </div>
+
+    <!-- New Balance 650 Rosse -->
+    <div class="product">
+        <h2>New Balance 650 Rosse</h2>
+        <img src="/newbalance/newbalance650rosse.webp" alt="New Balance 650 Rosse" class="zoom-img">
+        <p><strong>Prezzo: $130.00</strong></p>
+        <form method="post" action="/Home/AddToCart">
+            <input type="hidden" name="Articolo" value="New Balance 650 Rosse">
+            <input type="hidden" name="Prezzo" value="130.00">
+            <input type="hidden" name="Immagine" value="/newbalance/newbalance650rosse.webp">
+            <button type="submit">Aggiungi al Carrello</button>
+        </form>
+    </div>
+
+    <!-- New Balance 650 Verdi -->
+    <div class="product">
+        <h2>New Balance 650 Verdi</h2>
+        <img src="/newbalance/newbalance650verdi.webp" alt="New Balance 650 Verdi" class="zoom-img">
+        <p><strong>Prezzo: $130.00</strong></p>
+        <form method="post" action="/Home/AddToCart">
+            <input type="hidden" name="Articolo" value="New Balance 650 Verdi">
+            <input type="hidden" name="Prezzo" value="130.00">
+            <input type="hidden" name="Immagine" value="/newbalance/newbalance650verdi.webp">
+            <button type="submit">Aggiungi al Carrello</button>
+        </form>
+    </div>
+
+    <!-- New Balance 550 Rosse -->
+    <div class="product">
+        <h2>New Balance 550 Rosse</h2>
+        <img src="/newbalance/newbalance550rosse.webp" alt="New Balance 550 Rosse" class="zoom-img">
+        <p><strong>Prezzo: $120.00</strong></p>
+        <form method="post" action="/Home/AddToCart">
+            <input type="hidden" name="Articolo" value="New Balance 550 Rosse">
+            <input type="hidden" name="Prezzo" value="120.00">
+            <input type="hidden" name="Immagine" value="/newbalance/newbalance550rosse.webp">
+            <button type="submit">Aggiungi al Carrello</button>
+        </form>
+    </div>
+
+    <!-- New Balance 550 Verdi -->
+    <div class="product">
+        <h2>New Balance 550 Verdi</h2>
+        <img src="/newbalance/newbalance550verdi.webp" alt="New Balance 550 Verdi" class="zoom-img">
+        <p><strong>Prezzo: $120.00</strong></p>
+        <form method="post" action="/Home/AddToCart">
+            <input type="hidden" name="Articolo" value="New Balance 550 Verdi">
+            <input type="hidden" name="Prezzo" value="120.00">
+            <input type="hidden" name="Immagine" value="/newbalance/newbalance550verdi.webp">
+            <button type="submit">Aggiungi al Carrello</button>
+        </form>
+    </div>
+</div>

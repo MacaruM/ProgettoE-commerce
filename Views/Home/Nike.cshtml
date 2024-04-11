@@ -1,0 +1,232 @@
+@{
+    ViewData["Title"] = "Nike";
+}
+
+<header>
+    <h1>Scarpe Nike</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><button onclick="window.location.href='Jordan'">Jordan</button></li>
+        <li><button onclick="window.location.href='NewBalance'">New Balance</button></li>
+        <li><button onclick="window.location.href='Nike'">Nike</button></li>
+    </ul>
+</nav>
+
+<div class="container">
+    <div class="product">
+        <h2>Air Force 1 Bianche</h2>
+        <div class="product-content">
+            <img src="/nike/airforce1b.png" alt="Air Force 1 Bianche">
+            <p><span style="color:rgb(3, 15, 76);">Le Air Force 1 Bianche sono un classico intramontabile, apprezzate
+                    per il loro design pulito e versatile che si adatta a qualsiasi outfit.
+                    La tomaia in pelle garantisce durabilità e comfort, mentre la suola Air offre un'ammortizzazione
+                    reattiva.</span></p>
+        </div>
+        <p><strong>Prezzo: $120.00</strong></p>
+        <form method="post" action="/Home/AddToCart">
+            <input type="hidden" name="Articolo" value="Air Force 1 Bianche">
+            <input type="hidden" name="Prezzo" value="120.00">
+            <input type="hidden" name="Immagine" value="/nike/airforce1b.png">
+            <button type="submit">Aggiungi al Carrello</button>
+        </form>
+    </div>
+</div>
+
+<div class="container">
+    <div class="product">
+        <h2>Air Force 1 Nere</h2>
+        <div class="product-content">
+            <img src="/nike/airforce1n.webp" alt="Air Force 1 Nere">
+            <p><span style="color:rgb(3, 15, 76);">Le Air Force 1 Nere sono un'alternativa elegante alle classiche
+                    bianche.
+                    Queste sneaker sono dotate della stessa tomaia in pelle di alta qualità e
+                    della leggendaria suola Air, garantendo comfort e stile ineguagliabile.</span></p>
+
+        </div>
+        <p><strong>Prezzo: $120.00</strong></p>
+        <form method="post" action="/Home/AddToCart">
+            <input type="hidden" name="Articolo" value="Air Force 1 Nere">
+            <input type="hidden" name="Prezzo" value="120.00">
+            <input type="hidden" name="Immagine" value="/nike/airforce1n.webp">
+            <button type="submit">Aggiungi al Carrello</button>
+        </form>
+    </div>
+</div>
+
+<div class="container">
+    <div class="product">
+        <h2>Nike Dunk High Midnight Navy</h2>
+        <div class="product-content">
+            <img src="/nike/dunkhighblu.png" alt="Nike Dunk High Midnight Navy">
+            <p><span style="color:rgb(3, 15, 76);">Le Nike Dunk High Midnight Navy sono ispirate alle scarpe da basket
+                    degli
+                    anni '80. Caratterizzate da una tomaia in pelle scamosciata
+                    e mesh, queste sneaker offrono un look retrò e un comfort moderno.</span></p>
+        </div>
+        <p><strong>Prezzo: $110.00</strong></p>
+        <form method="post" action="/Home/AddToCart">
+            <input type="hidden" name="Articolo" value="Nike DunkHigh M.N. Navy">
+            <input type="hidden" name="Prezzo" value="110.00">
+            <input type="hidden" name="Immagine" value="/nike/dunkhighblu.png">
+            <button type="submit">Aggiungi al Carrello</button>
+        </form>
+    </div>
+</div>
+
+<div class="container">
+    <div class="product">
+        <h2>Nike Dunk High Panda</h2>
+        <div class="product-content">
+            <img src="/nike/dunkhighnere.png" alt="Nike Dunk High Panda">
+            <p><span style="color:rgb(3, 15, 76);">Le Nike Dunk High Panda sono una versione divertente e iconica delle
+                    Dunk High.
+                    Caratterizzate da una tomaia in pelle bianca e nera a contrasto, queste sneaker
+                    sono un must-have per gli amanti dello stile streetwear.</span></p>
+        </div>
+        <p><strong>Prezzo: $120.00</strong></p>
+        <form method="post" action="/Home/AddToCart">
+            <input type="hidden" name="Articolo" value="Nike Dunk High Panda">
+            <input type="hidden" name="Prezzo" value="120.00">
+            <input type="hidden" name="Immagine" value="/nike/dunkhighnere.png">
+            <button type="submit">Aggiungi al Carrello</button>
+        </form>
+    </div>
+</div>
+
+<div class="container">
+    <div class="product">
+        <h2>Nike Dunk High University Red</h2>
+        <div class="product-content">
+            <img src="/nike/dunkhighrosse.webp" alt="Nike Dunk High University Red">
+            <p><span style="color:rgb(3, 15, 76);">Le Nike Dunk High University Red sono un'esplosione di colore per i
+                    tuoi piedi.
+                    Con una tomaia in pelle rossa brillante e dettagli in bianco, queste sneaker
+                    aggiungeranno un tocco di vivacità al tuo look.</span></p>
+        </div>
+        <p><strong>Prezzo: $120.00</strong></p>
+        <form method="post" action="/Home/AddToCart">
+            <input type="hidden" name="Articolo" value="Nike Dunk High University Red">
+            <input type="hidden" name="Prezzo" value="120.00">
+            <input type="hidden" name="Immagine" value="/nike/dunkhighrosse.webp">
+            <button type="submit">Aggiungi al Carrello</button>
+        </form>
+    </div>
+</div>
+
+<div class="container">
+    <div class="product">
+        <h2>Nike Dunk High Australia Verdi</h2>
+        <div class="product-content">
+            <img src="/nike/dunkhighverdi.webp" alt="Nike Dunk High Australia Verdi">
+            <p><span style="color:rgb(3, 15, 76);">Le Nike Dunk High Australia Verdi sono ispirate ai colori della
+                    natura australiana. Con una tomaia in pelle verde bosco
+                    e dettagli in bianco, queste sneaker offrono uno stile fresco e unico.</span></p>
+        </div>
+        <p><strong>Prezzo: $120.00</strong></p>
+        <form method="post" action="/Home/AddToCart">
+            <input type="hidden" name="Articolo" value="Nike Dunk High Australia Verdi">
+            <input type="hidden" name="Prezzo" value="120.00">
+            <input type="hidden" name="Immagine" value="/nike/dunkhighverdi.webp">
+            <button type="submit">Aggiungi al Carrello</button>
+        </form>
+    </div>
+</div>
+
+<div class="container">
+    <div class="product">
+        <h2>Nike Dunk High Lakers</h2>
+        <div class="product-content">
+            <img src="/nike/dunkhighyp.jpeg" alt="Nike Dunk High Lakers">
+            <p><span style="color:rgb(3, 15, 76);">Le Nike Dunk High Lakers sono un omaggio ai colori della squadra
+                    della squadra di basket Los Angeles Lakers.Con una tomaia in pelle
+                    gialla e viola, queste sneaker sono un must per gli appassionati di basket e di stile.</span></p>
+        </div>
+        <p><strong>Prezzo: $120.00</strong></p>
+        <form method="post" action="/Home/AddToCart">
+            <input type="hidden" name="Articolo" value="Nike Dunk High Lakers">
+            <input type="hidden" name="Prezzo" value="120.00">
+            <input type="hidden" name="Immagine" value="/nike/dunkhighyp.jpeg">
+            <button type="submit">Aggiungi al Carrello</button>
+        </form>
+    </div>
+</div>
+
+<div class="container">
+    <div class="product">
+        <h2>Nike Dunk Low Polar Blue</h2>
+        <div class="product-content">
+            <img src="/nike/dunklowblu.jpeg" alt="Nike Dunk Low Polar Blue">
+            <p><span style="color:rgb(3, 15, 76);">Le Nike Dunk Low Polar Blue sono una versione più bassa delle
+                    iconiche Dunk High. Con una tomaia in pelle blu ghiaccio e
+                    dettagli in bianco, queste sneaker sono perfette per un look casual e alla moda.</span></p>
+        </div>
+        <p><strong>Prezzo: $110.00</strong></p>
+        <form method="post" action="/Home/AddToCart">
+            <input type="hidden" name="Articolo" value="Nike Dunk Low Polar Blue">
+            <input type="hidden" name="Prezzo" value="110.00">
+            <input type="hidden" name="Immagine" value="/nike/dunklowblu.jpeg">
+            <button type="submit">Aggiungi al Carrello</button>
+        </form>
+    </div>
+</div>
+
+<div class="container">
+    <div class="product">
+        <h2>Nike Dunk Low Cacao Wow</h2>
+        <div class="product-content">
+            <img src="/nike/dunklowmarroni.webp" alt="Nike Dunk Low Cacao Wow">
+            <p><span style="color:rgb(3, 15, 76);">LeLe Nike Dunk Low Cacao Wow sono caratterizzate da una
+                    tomaia in pelle marrone cioccolato e dettagli in bianco.
+                    Queste sneaker offrono un look elegante e raffinato, perfetto per ogni occasione.</span></p>
+        </div>
+        <p><strong>Prezzo: $110.00</strong></p>
+        <form method="post" action="/Home/AddToCart">
+            <input type="hidden" name="Articolo" value="Nike Dunk Low Cacao Wow">
+            <input type="hidden" name="Prezzo" value="110.00">
+            <input type="hidden" name="Immagine" value="/nike/dunklowmarroni.webp">
+            <button type="submit">Aggiungi al Carrello</button>
+        </form>
+    </div>
+</div>
+
+<div class="container">
+    <div class="product">
+        <h2>Nike Dunk Low Panda</h2>
+        <div class="product-content">
+            <img src="/nike/dunklownere.jpg" alt="Nike Dunk Low Panda">
+            <p><span style="color:rgb(3, 15, 76);">Le Nike Dunk Low Panda sono caratterizzate da
+                    una tomaia in pelle bianca e nera a contrasto,
+                    ispirata all'adorabile animale. Queste sneaker sono
+                    un must-have per gli amanti dello stile streetwear.</span></p>
+        </div>
+        <p><strong>Prezzo: $110.00</strong></p>
+        <form method="post" action="/Home/AddToCart">
+            <input type="hidden" name="Articolo" value="Nike Dunk Low Panda">
+            <input type="hidden" name="Prezzo" value="110.00">
+            <input type="hidden" name="Immagine" value="/nike/dunklownere.jpg">
+            <button type="submit">Aggiungi al Carrello</button>
+        </form>
+    </div>
+</div>
+
+<div class="container">
+    <div class="product">
+        <h2>Nike Dunk Low Michigan State</h2>
+        <div class="product-content">
+            <img src="/nike/dunklowverdi.jpeg" alt="Nike Dunk Low Michigan State">
+            <p><span style="color:rgb(3, 15, 76);">Le Nike Dunk Low Michigan State sono un omaggio
+                    ai colori della squadra sportiva Michigan State.
+                    Con una tomaia in pelle verde e dettagli in bianco,queste
+                    sneaker sono perfette per gli appassionati di sport e di stile.</span></p>
+        </div>
+        <p><strong>Prezzo: $110.00</strong></p>
+        <form method="post" action="/Home/AddToCart">
+            <input type="hidden" name="Articolo" value="Nike Dunk Low Michigan State">
+            <input type="hidden" name="Prezzo" value="110.00">
+            <input type="hidden" name="Immagine" value="/nike/dunklowverdi.jpeg">
+            <button type="submit">Aggiungi al Carrello</button>
+        </form>
+    </div>
+</div>
